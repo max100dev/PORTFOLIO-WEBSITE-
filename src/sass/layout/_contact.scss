@@ -1,0 +1,6 @@
+@use "../abstracts/mixins" as *;
+.contact {
+  @include flex-layout(center, center, column);
+  height: 20vh;
+  background-color: white;
+}

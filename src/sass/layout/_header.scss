@@ -1,0 +1,7 @@
+@use "../abstracts/mixins" as *;
+
+.header {
+  @include flex-layout(space-between, center, row);
+  margin: 2.5em 1.9em;
+  height: 5vh;
+}

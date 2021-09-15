@@ -1,0 +1,33 @@
+@use "../abstracts/mixins" as *;
+
+@include for-tablet-portrait-up {
+  .hero__img {
+    max-width: 80%;
+  }
+
+  .hero__title {
+    max-width: 80%;
+  }
+
+  .about,
+  .projects {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 750px) {
+  .about,
+  .projects {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@include for-tablet-landscape-up {
+  .about {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+  }
+}

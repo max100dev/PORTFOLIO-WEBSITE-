@@ -1,0 +1,53 @@
+@use "../abstracts/mixins" as *;
+.projects {
+  @include flex-layout(center, center, column);
+  background-color: whitesmoke;
+  padding: 0 1em;
+}
+
+.example {
+  margin-bottom: 5em;
+}
+
+.example__link {
+  @include flex-layout(space-between, center, row);
+  background-color: white;
+  padding: 0.2em 1em;
+  cursor: pointer;
+}
+
+.example__link:hover {
+  background-color: rgb(251, 251, 251);
+}
+
+.link__img {
+  width: 3em;
+}
+
+.link__title {
+  display: flex;
+  align-items: center;
+}
+
+.link__title::after {
+  content: "";
+  background-image: url("../../Assets/Images/link.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 1.2em;
+  width: 1.2em;
+  flex-grow: 0;
+  display: inline-block;
+  margin-left: 0.5em;
+  opacity: 60%;
+}
+
+.example__thumbnail {
+  position: relative;
+  z-index: 2;
+}
+
+.example__details {
+  background-color: white;
+  padding: 2em 2.5em;
+}

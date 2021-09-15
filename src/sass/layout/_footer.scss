@@ -1,0 +1,39 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+.footer {
+  height: 20vh;
+  background-color: whitesmoke;
+
+  &__nav {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.nav__parent {
+  @include flex-layout(space-between, center, row);
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.nav__list {
+  list-style: none;
+
+  a {
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+  }
+}
+
+.nav__list a:hover {
+  color: $secondary-color;
+}
+
+.nav__img {
+  width: 1.5em;
+  transition: all 0.3s ease-in;
+}
+.social__icon:hover .nav__img {
+  transform: translateY(-3px);
+}

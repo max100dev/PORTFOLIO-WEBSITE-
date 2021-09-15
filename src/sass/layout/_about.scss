@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as *;
+
+.about {
+  background-color: whitesmoke;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 5em;
+}
+.personal__info {
+  background-color: $secondary-color;
+  padding: 4em 2.5em;
+}
+
+.about__personal {
+  margin-bottom: 8em;
+}
+
+.about__business {
+  width: 95%;
+  margin: auto;
+}
+
+.business__card {
+  padding: 3em 1.5em;
+  background-color: white;
+}

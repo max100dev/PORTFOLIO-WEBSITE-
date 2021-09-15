@@ -1,0 +1,13 @@
+@use "../abstracts/mixins" as *;
+.work {
+  background-color: whitesmoke;
+  padding-bottom: 2em;
+}
+
+.service {
+  @include flex-layout(center, center, column);
+  margin-bottom: 8em;
+}
+.service__img {
+  width: 10em;
+}

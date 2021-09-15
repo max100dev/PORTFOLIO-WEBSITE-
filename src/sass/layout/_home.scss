@@ -1,0 +1,17 @@
+@use "../abstracts/mixins" as *;
+
+.home {
+  @include flex-layout(center, center, column);
+  min-height: 95vh;
+  padding: 0 1em;
+  background-color: whitesmoke;
+}
+
+.home__hero {
+  @include flex-layout(center, center, column);
+}
+
+.hero__img {
+  margin-top: 4em;
+  margin-bottom: 2em;
+}

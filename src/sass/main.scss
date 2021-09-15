@@ -1,0 +1,19 @@
+@use "./layout/header";
+@use "./layout/about";
+@use "./layout/footer";
+@use "./layout/home";
+@use "./layout/navigation";
+@use "./layout/work";
+@use "./layout/contact";
+@use "./layout/projects";
+@use "./components/buttons";
+@use "./base/typography";
+@use "./abstracts/variables";
+@use "./base/reset";
+@use "./base/animations";
+@use "./base/media";
+
+body {
+  overflow-x: hidden;
+  background-color: whitesmoke;
+}

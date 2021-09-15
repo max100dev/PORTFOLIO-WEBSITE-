@@ -1,0 +1,65 @@
+@use "../abstracts/mixins" as *;
+@use "../base/animations" as *;
+.desktop {
+  display: none;
+}
+
+.header__nav--mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  background-color: white;
+  height: 100vh;
+  width: 65%;
+  transform: translate(100%);
+  transition: all 0.5s ease-in;
+}
+
+.show-nav {
+  transform: translate(0);
+}
+
+.nav__parent--mobile {
+  @include flex-layout(center, center, column);
+  width: 100%;
+  height: 100%;
+}
+
+.nav__list--mobile {
+  text-align: left;
+  font-size: 1.6rem;
+  margin-bottom: 0.8em;
+}
+
+.nav__social--parent {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  display: flex;
+  transform: translate(-50%, -10%);
+}
+
+.nav__list--header {
+  margin-right: 0.8em;
+}
+
+.header__hamburger {
+  width: 2.3em;
+  height: 2.3em;
+  flex-grow: 0;
+  background-image: url(../../Assets/Images/burger.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease-in;
+}
+
+.change-to-cross {
+  background-image: url(../../Assets/Images/cross.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

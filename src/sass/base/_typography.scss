@@ -1,0 +1,90 @@
+@use "../abstracts/variables" as *;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+a,
+p,
+button,
+input {
+  font-family: "Open Sans", sans-serif;
+  color: $primary-color;
+}
+
+a,
+button,
+input {
+  cursor: pointer;
+}
+
+.second-color {
+  color: $secondary-color;
+}
+
+.logo__title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero__title {
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.info__title,
+.info__desc {
+  color: white;
+}
+
+.info__title {
+  margin-bottom: 0.8em;
+  font-size: 1.3rem;
+}
+
+.card__title {
+  margin-bottom: 0.8em;
+}
+
+.projects__title {
+  color: $secondary-color;
+  font-size: 1.1rem;
+  margin-bottom: 2em;
+}
+
+.thumbnail__title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0.5em 1.5em;
+  background-color: white;
+  z-index: 3;
+  color: $secondary-color;
+}
+
+.details__title {
+  margin-bottom: 0.8rem;
+}
+
+.work__title {
+  text-align: center;
+  padding: 2em;
+}
+
+.service__title {
+  margin: 0.8em 0;
+}
+
+.contact__desc {
+  font-size: 0.9rem;
+  margin-bottom: 0.8em;
+}
+
+.contact__title {
+  font-size: 1.9rem;
+}
